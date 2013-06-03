@@ -2,17 +2,11 @@
 
  filetype off                   " required!
 
- " load vundle
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
-
  " load pathogen
  execute pathogen#infect()
  
  " colorscheme zenburn 
  " let g:zenburn_force_dark_Background=1
- 
- " colorscheme detailed
  
  " colorscheme solarized
  " set background=dark
@@ -21,23 +15,7 @@
 
  colorscheme molokai
  let g:molokai_original = 1
- " let Vundle manage Vundle
- " required! 
- Bundle 'gmarik/vundle'
 
- " original repos on github
- Bundle 'tpope/vim-fugitive'
- Bundle 'Lokaltog/vim-easymotion'
- Bundle 'crooloose/nerdtree'
- Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
- Bundle 'tpope/vim-rails.git'
- Bundle 'derekwyatt/vim-scala'
- Bundle 'gre/play2vim'
- Bundle 'L9'
- Bundle 'git://git.wincent.com/command-t.git'
-
- Bundle 'FuzzyFinder'
- Bundle 'mileszs/ack.vim'
  syntax enable                     " Turn on syntax highlighting.
  filetype plugin indent on     	   " required!
 
@@ -123,7 +101,6 @@
  " let g:rct_completion_use_fri = 1
  let g:RCT_ri_cmd = "ri -T --format=bs "
 
-
  " Save and reload Foldings automatically
  autocmd BufWinLeave *.* mkview
  autocmd BufWinEnter *.* silent loadview 
@@ -132,7 +109,6 @@
  " (Because it conflicts with fuzzyfinder_textmate)
  autocmd BufNewFile,BufRead *_spec.rb compiler rspec
  map <Leader>] <Plug>MakeGreen " change from <Leader>t to <Leader>]
-
 
  " Bind Q and W commands to lower case equals.
  command! Q q
